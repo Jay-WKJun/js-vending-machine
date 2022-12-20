@@ -7,11 +7,14 @@ class Binder {
     this.view = view;
   }
 
-  #applyViewModelInElements(viewModel, view) {
+  #applyViewModelInElements(viewModels, view) {
     // 여기가 viewModel의 이름에 해당하는 것들을 적용하는 곳.
+    for (const key of viewModels) {
+      
+    }
   }
 
-  render(viewModel) {
+  render(viewModels) {
     this.view.render();
   }
 }

@@ -24,7 +24,7 @@ export function createProductManagerViewModel(list) {
   // new ViewModel을 담아서 넘기면 되지 ㅇㅇ
 
   // 일단 하나에 전부 다하고 리팩토링하자.
-  return (new ViewModel({
+  return (new ViewModel('rootElement', {
     productContainer: {
       productNameInput: new ViewModel({}),
       productPriceInput: new ViewModel({}),
